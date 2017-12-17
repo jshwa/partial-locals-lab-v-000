@@ -5,6 +5,6 @@
   <input type="submit" name="" id="Search">
 </form>
 
-<% if !@student.exists? %>
+<% if @student %>
   <%= render partial: 'student', locals: {student: @student} %>
 <% end %>
