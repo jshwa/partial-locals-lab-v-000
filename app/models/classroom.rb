@@ -17,7 +17,7 @@ class Classroom < ActiveRecord::Base
     students.where("birthday is not null").order("birthday asc").first
   end
 
-  def search(student)
-    Student.find_by(name: student)
+  def search(student_name)
+    Student.find_by(name: student_name)
   end
 end
