@@ -1,6 +1,6 @@
 Classroom Info
 <%= render partial: 'classroom', locals:{classroom:@classroom} %>
-<%= raise @classroom.students.inspect %>
-<% @students.each do |s| %>
+
+<% @classroom.students.each do |s| %>
 <%= render partial: 'students/student', locals:{student:s} %>
 <% end %>
