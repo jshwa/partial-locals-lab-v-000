@@ -26,7 +26,7 @@ class StudentsController < ApplicationController
   end
 
   def student_search
-    @found_students = Student.search(student_params[:name])
+    @found_student = Student.search(student_params[:name])
     render 'show'
   end
 
