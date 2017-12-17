@@ -18,7 +18,7 @@ class Student < ActiveRecord::Base
     if student_name.empty?
       Student.all
     else
-      Student.all.collect {|student| student.match(student_name)}
+      Student.all.collect {|student| student.name.match(student_name)}
     end
   end
 end
