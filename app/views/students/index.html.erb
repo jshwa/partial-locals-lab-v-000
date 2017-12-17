@@ -1,5 +1,5 @@
 
-<%= form_for @student, search_path do |t|%>
+<%= form_for @student, url:search_path do |t|%>
   <%= t.label :Search %>
   <%= t.input :name%>
   <%= t.submit %>
