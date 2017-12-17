@@ -24,6 +24,10 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
+  def student_search
+    @student = Student.search(student_params[:name])
+  end
+
   def student_params
     params.require(:student).permit(:name, :birthday, :hometown)
   end
