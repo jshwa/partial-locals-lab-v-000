@@ -1,12 +1,4 @@
 
-<%= form_for @student, url:search_path do |t|%>
-  <%= t.label :Search %>
-  <%= t.text_field :name%>
-  <%= t.submit %>
-<% end %>
 
-<% if @found_students %>
-  <%= @found_students.each do |found_student| %>
-    <%= render partial: 'student', locals: {student: found_student} %>
-  <% end %>
-<% end %>
+    <%= render partial: 'student', locals: {student: @student} %>
+
