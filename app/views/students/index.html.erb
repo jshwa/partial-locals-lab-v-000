@@ -5,8 +5,4 @@
   <%= t.submit %>
 <% end %>
 
-<% if @found_students %>
-  <%= @found_students.each do |found_student| %>
-    <%= render partial: 'student', locals: {student: found_student} %>
-  <% end %>
-<% end %>
+
