@@ -18,7 +18,7 @@ class Student < ActiveRecord::Base
     if student_name.empty?
       Student.all
     else
-      Student.all.collect {|s| s.name if s.name.match(student_name)}.compact!
+      Student.all.collect {|s| s.name if s.name.match(student_name.*)}.compact!
     end
   end
 end
