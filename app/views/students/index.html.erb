@@ -6,7 +6,7 @@
 <% end %>
 
 <% if @found_students %>
-  <%= @found_student.each do |found_student| %>
+  <%= @found_students.each do |found_student| %>
     <%= render partial: 'student', locals: {student: @found_student} %>
   <% end %>
 <% end %>
