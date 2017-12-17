@@ -6,6 +6,5 @@
 <% end %>
 
 <% if @found_student %>
-  raise @student.inspect
   <%= render partial: 'student', locals: {student: @found_student} %>
 <% end %>
