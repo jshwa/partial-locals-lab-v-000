@@ -1,7 +1,7 @@
 
 <%= form_for @student, url:search_path do |t|%>
   <%= t.label :Search %>
-  <%= t.input :name%>
+  <%= t.text_field :name%>
   <%= t.submit %>
 <% end %>
 
