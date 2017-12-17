@@ -3,7 +3,7 @@
   <label>Search: </label>
   <input type="text" name:"student">
   <input type="submit" name="" id="">
-</form>
+<% end %>
 
 <% if @student %>
   <%= render partial: 'student', locals: {student: @student} %>
