@@ -1,7 +1,7 @@
 Classroom Info
 <%= render partial: 'classroom', locals:{classroom:@classroom} %>
 
-<% @students.each do |student| %>
+<% @students.each do |s| %>
 <%= raise student.inspect %>
-<%= render partial: 'students/student', locals:{student:student} %>
+<%= render partial: 'students/student', locals:{student:s} %>
 <% end %>
