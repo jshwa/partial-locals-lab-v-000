@@ -5,6 +5,7 @@
   <%= t.submit %>
 <% end %>
 
-<% if @student %>
-  <%= render partial: 'student', locals: {student: @student} %>
+<% if @found_student %>
+  raise @student.inspect
+  <%= render partial: 'student', locals: {student: @found_student} %>
 <% end %>
