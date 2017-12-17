@@ -21,7 +21,6 @@ class StudentsController < ApplicationController
   end
 
   def index
-    raise params.inspect
     @students = Student.all
   end
 
