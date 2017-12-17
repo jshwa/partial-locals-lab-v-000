@@ -6,8 +6,8 @@
 <% end %>
 
 <% if @found_students %>
-<%= raise @found_students.inspect %>
   <%= @found_students.each do |found_student| %>
+    <%= raise @found_student.inspect %>
     <%= render partial: 'student', locals: {student: @found_student} %>
   <% end %>
 <% end %>
