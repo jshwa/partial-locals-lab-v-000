@@ -1,8 +1,8 @@
 
-<%= form_tag search_path, method: 'post' %>
-  <label>Search: </label>
-  <input type="text" name:"student">
-  <input type="submit" name="" id="">
+<%= form_for @student, search_path do |t|%>
+  <%= t.label :Search %>
+  <%= t.input :name%>
+  <%= t.submit %>
 <% end %>
 
 <% if @student %>
