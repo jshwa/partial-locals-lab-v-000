@@ -21,6 +21,7 @@ class StudentsController < ApplicationController
   end
 
   def index
+    @student.new
     @students = Student.all
   end
 
